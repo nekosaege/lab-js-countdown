@@ -3,8 +3,6 @@ let timer = null; // Variable to store the interval
 
 const timeElement = document.getElementById("time");
 const button = document.getElementById("start-btn");
-const toast = document.getElementById("toast");
-const closeToast = document.getElementById("close-toast");
 
 function startCountdown() {
   let count = DURATION;
@@ -23,6 +21,8 @@ function startCountdown() {
   }, 1000);
 }
 
+const toast = document.getElementById("toast");
+const closeToast = document.getElementById("close-toast");
 function showToast(message) {
   document.getElementById("toast-message").textContent = message;
   toast.classList.add("show");
